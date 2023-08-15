@@ -4,7 +4,7 @@ const createSut = (name: string, price: number): Product =>
   new Product(name, price);
 
 describe('Product', () => {
-  it('should return a object', () => {
+  it('should have properties name and price', () => {
     // System under test
     const sut = createSut('Cup', 29.9);
     expect(sut).toHaveProperty('name', 'Cup');
